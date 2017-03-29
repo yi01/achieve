@@ -9,6 +9,6 @@ class NoticeMailer < ApplicationMailer
     @blog = blog
 
     mail to: "yi01234567890123456789@gmail.com"
-      subject: "Achieve ブログが投稿されました"
+      subject: '【Achieve】ブログが投稿されました'
   end
 end
