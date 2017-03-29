@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 100.times do |n|
-    user_id = 2
+    user_id = 1
     title = "seed"
     content = "faker"
     Blog.create!(user_id: user_id, title: title, content: content)
