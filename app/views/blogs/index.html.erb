@@ -10,8 +10,14 @@
       <%= link_to "ブログを作成する", new_blog_path, class: 'btn btn-default' %>
     <% @blogs.each do |blog| %>
     <div class="row">
-      <div class="avatar-image" style="background-image: url(<%= blog.user.avatar %>);">
-      </div>
+      <% if blog.user.avatar? %>
+        <div class="avatar-image" style="background-image: url(<%= blog.user.avatar %>);">
+         </div>
+      <% else %>
+        <div class="avatar-image">
+          <%= image_tag 'no_image.png' %>
+        </div>
+      <% end %>
 
       <h2><%= blog.user.name %></h2>
       <h4><strong><%= blog.title %></strong></h4>
