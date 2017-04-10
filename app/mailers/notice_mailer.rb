@@ -9,7 +9,7 @@ class NoticeMailer < ApplicationMailer
 
   def sendmail_contact(contact)
     @contact = contact
-    mail to: current_user.email,
+    mail to: "yi012345678901@gmail.com",
          subject: '【Achieve】お問い合わせありがとうございました'
   end
 end
